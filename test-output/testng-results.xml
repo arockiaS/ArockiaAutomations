@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="2340" started-at="2018-08-10T20:06:19Z" finished-at="2018-08-10T20:06:21Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="2340" started-at="2018-08-10T20:06:19Z" finished-at="2018-08-10T20:06:21Z">
+      <class name="testLeafTestCases.TC003DuplicateLead">
+        <test-method status="PASS" signature="startSuite()[pri:0, instance:testLeafTestCases.TC003DuplicateLead@19d02cb]" name="startSuite" is-config="true" duration-ms="2078" started-at="2018-08-10T20:06:17Z" finished-at="2018-08-10T20:06:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSuite -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:testLeafTestCases.TC003DuplicateLead@19d02cb]" name="setData" is-config="true" duration-ms="0" started-at="2018-08-10T20:06:19Z" finished-at="2018-08-10T20:06:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="startTest1()[pri:0, instance:testLeafTestCases.TC003DuplicateLead@19d02cb]" name="startTest1" is-config="true" duration-ms="0" started-at="2018-08-10T20:06:19Z" finished-at="2018-08-10T20:06:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest1 -->
+        <test-method status="SKIP" signature="EditLeads(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testLeafTestCases.TC003DuplicateLead@19d02cb]" name="EditLeads" duration-ms="0" started-at="2018-08-10T20:06:21Z" data-provider="TestData2" finished-at="2018-08-10T20:06:21Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.io.FileNotFoundException: D:\TestLeaf\Arockia\automation\.\Excel\DuplicateLeadPOM.xlsx (The process cannot access the file because it is being used by another process)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.io.FileNotFoundException: D:\TestLeaf\Arockia\automation\.\Excel\DuplicateLeadPOM.xlsx (The process cannot access the file because it is being used by another process)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.FileNotFoundException: D:\TestLeaf\Arockia\automation\.\Excel\DuplicateLeadPOM.xlsx (The process cannot access the file because it is being used by another process)
+at java.io.FileOutputStream.open0(Native Method)
+at java.io.FileOutputStream.open(Unknown Source)
+at java.io.FileOutputStream.<init>(Unknown Source)
+at java.io.FileOutputStream.<init>(Unknown Source)
+at org.apache.poi.openxml4j.opc.internal.FileHelper.copyFile(FileHelper.java:68)
+at org.apache.poi.openxml4j.opc.ZipPackage.closeImpl(ZipPackage.java:456)
+at org.apache.poi.openxml4j.opc.OPCPackage.close(OPCPackage.java:479)
+at org.apache.poi.POIXMLDocument.close(POIXMLDocument.java:189)
+at utility.ReadExcel.readExcel(ReadExcel.java:36)
+at wdMethods.Annotations.getEditleaddata(Annotations.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditLeads -->
+        <test-method status="PASS" signature="stopSuite()[pri:0, instance:testLeafTestCases.TC003DuplicateLead@19d02cb]" name="stopSuite" is-config="true" duration-ms="1482" started-at="2018-08-10T20:06:21Z" finished-at="2018-08-10T20:06:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopSuite -->
+      </class> <!-- testLeafTestCases.TC003DuplicateLead -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
